@@ -1,0 +1,150 @@
+html {
+    background-color: hsl(229, 57%, 11%);
+}
+
+body {
+    /* background-color: hsl(229, 57%, 11%); */
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    margin: 0;
+    color: hsl(243, 100%, 93%);
+    position: relative;
+}
+
+span {
+    font-weight: 700;
+}
+
+
+/* Background Section*/
+.background {
+    background: url('https://github.com/Pearlsky/Fylo-Data-Storage-Component/blob/master/images/bg-desktop.png?raw=true');
+    background-position: center;
+    background-size: cover;
+    padding-top: 125px;
+    height: 270px;
+    width: 1360px;
+    position: absolute;
+    bottom: 0;
+}
+
+
+/* Container Section */
+
+.big-container {
+    padding: 18% 20% 21%;
+    display: flex;
+}
+
+
+/* Brand Section */
+
+.brand-container {
+   padding: 34px 100px 36px 35px;
+   margin: auto 12.5px auto auto;
+   background-color: hsl(228, 56%, 26%);
+   border-radius: 7px 70px 7px 7px;
+   text-align: left;
+   position: relative;
+}
+
+.fylo-brand {
+    margin-bottom: 20px;
+    transform: scale(.8);
+    position: relative;
+    right: 0.9rem;
+}
+
+.icon-file {
+    padding: 6px 9px;
+    position: relative;
+    top: 2px;
+    border-radius: 7px;
+    margin-right: 7px;;
+    
+}
+
+.icon-file, .icon-folder, .icon-upload {
+    display: inline-block;
+    background-color: hsl(229, 57%, 11%);
+}
+
+.icon-folder, .icon-upload {
+    padding: 8px;
+    border-radius: 7.3px;
+}
+
+.icon-folder {
+    margin-right: 7px;
+}
+
+img[alt^="upload"] {
+    padding: 2px 0;
+}
+
+
+/* Storage Usage Section */
+
+.storage-details-container {
+    padding: 17.5px 35px;
+    margin: 33.3px auto auto 12.5px;
+    background-color: hsl(228, 56%, 26%);
+    border-radius: 7px;
+    position: relative;
+}
+
+.storage-details-container p:nth-of-type(2) {
+    position: relative;
+    right: 11rem;
+}
+
+.storage-details-container p:nth-of-type(3) {
+    position: relative;
+    left: 11rem;
+}
+
+.storage-capacity-text {
+    display: inline-block;
+}
+
+.usage-meter {
+    height: 1rem;
+    width: 27rem;
+    border-radius: 15px;
+    background-color: hsl(229, 57%, 11%);
+    padding: 2px 0 0 2px;
+}
+
+.used-meter-bar {
+    height: 0.8rem;
+    width: 20rem;
+    border-radius: inherit;
+    background: linear-gradient(90deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    padding-top: 1.5px;
+}
+
+.used-meter-peak {
+    height: 0.7rem;
+    width: 0.7rem;
+    background-color: hsl(243, 100%, 93%);
+    border-radius: 50%;
+    position: relative;
+    left: 19.25rem;
+}
+
+.used-text {
+    position: relative;
+    right: 6.7rem;
+}
+
+
+/* Attribution Section  */
+
+.attribution {
+    font-size: 11px;
+    position: relative;
+ }
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+ }
