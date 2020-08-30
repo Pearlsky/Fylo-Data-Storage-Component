@@ -1,150 +1,245 @@
-html {
-    background-color: hsl(229, 57%, 11%);
-}
-
 body {
-    /* background-color: hsl(229, 57%, 11%); */
-    font-family: 'Raleway', sans-serif;
-    font-size: 14px;
-    text-align: center;
-    margin: 0;
-    color: hsl(243, 100%, 93%);
-    position: relative;
+  background-color: hsl(229, 57%, 11%);
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  text-align: center;
+  margin: 0;
+  color: hsl(243, 100%, 93%);
+  position: relative;
 }
 
 span {
-    font-weight: 700;
+  font-weight: 700;
 }
-
 
 /* Background Section*/
-.background {
-    background: url('https://github.com/Pearlsky/Fylo-Data-Storage-Component/blob/master/images/bg-desktop.png?raw=true');
-    background-position: center;
-    background-size: cover;
-    padding-top: 125px;
-    height: 270px;
-    width: 1360px;
-    position: absolute;
-    bottom: 0;
-}
 
+.background {
+  background: url("../images/bg-desktop.png");
+  background-position: center;
+  background-size: cover;
+  padding-top: 145px;
+  height: 270px;
+  width: 1440px;
+  position: absolute;
+  bottom: 0;
+}
 
 /* Container Section */
 
 .big-container {
-    padding: 18% 20% 21%;
-    display: flex;
+  padding: 18% 20% 22%;
+  display: flex;
 }
-
 
 /* Brand Section */
 
 .brand-container {
-   padding: 34px 100px 36px 35px;
-   margin: auto 12.5px auto auto;
-   background-color: hsl(228, 56%, 26%);
-   border-radius: 7px 70px 7px 7px;
-   text-align: left;
-   position: relative;
+  padding: 34px 100px 36px 35px;
+  margin: auto 12.5px auto auto;
+  background-color: hsl(228, 56%, 26%);
+  border-radius: 7px 70px 7px 7px;
+  text-align: left;
+  position: relative;
 }
 
 .fylo-brand {
-    margin-bottom: 20px;
-    transform: scale(.8);
-    position: relative;
-    right: 0.9rem;
+  margin-bottom: 20px;
+  transform: scale(0.8);
+  position: relative;
+  right: 0.9rem;
 }
 
 .icon-file {
-    padding: 6px 9px;
-    position: relative;
-    top: 2px;
-    border-radius: 7px;
-    margin-right: 7px;;
-    
+  padding: 6px 9px;
+  position: relative;
+  top: 2px;
+  border-radius: 7px;
+  margin-right: 7px;
 }
 
-.icon-file, .icon-folder, .icon-upload {
-    display: inline-block;
-    background-color: hsl(229, 57%, 11%);
+.icon-file,
+.icon-folder,
+.icon-upload {
+  display: inline-block;
+  background-color: hsl(229, 57%, 11%);
 }
 
-.icon-folder, .icon-upload {
-    padding: 8px;
-    border-radius: 7.3px;
+.icon-folder,
+.icon-upload {
+  padding: 8px;
+  border-radius: 7.3px;
 }
 
 .icon-folder {
-    margin-right: 7px;
+  margin-right: 7px;
 }
 
 img[alt^="upload"] {
-    padding: 2px 0;
+  padding: 2px 0;
 }
-
 
 /* Storage Usage Section */
 
 .storage-details-container {
-    padding: 17.5px 35px;
-    margin: 33.3px auto auto 12.5px;
-    background-color: hsl(228, 56%, 26%);
-    border-radius: 7px;
-    position: relative;
-}
-
-.storage-details-container p:nth-of-type(2) {
-    position: relative;
-    right: 11rem;
+  padding: 17.5px 35px;
+  margin: 33.3px auto auto 12.5px;
+  background-color: hsl(228, 56%, 26%);
+  border-radius: 7px;
+  position: relative;
 }
 
 .storage-details-container p:nth-of-type(3) {
-    position: relative;
-    left: 11rem;
+  position: relative;
+  right: 12em;
+}
+
+.storage-details-container p:nth-of-type(4) {
+  position: relative;
+  left: 12em;
 }
 
 .storage-capacity-text {
-    display: inline-block;
+  display: inline-block;
+}
+
+.unused-text {
+  padding: 7px 15px;
+  background-color: hsl(243, 100%, 93%);
+  border-radius: 5px;
+  display: inline-block;
+  color: hsl(229, 57%, 11%);
+  font-size: 10px;
+  position: absolute;
+  right: 25px;
+  top: -40px;
+}
+
+.unused-text-span {
+  font-size: 25px;
 }
 
 .usage-meter {
-    height: 1rem;
-    width: 27rem;
-    border-radius: 15px;
-    background-color: hsl(229, 57%, 11%);
-    padding: 2px 0 0 2px;
+  height: 1rem;
+  width: 27rem;
+  border-radius: 15px;
+  background-color: hsl(229, 57%, 11%);
+  padding: 2px 0 0 2px;
 }
 
 .used-meter-bar {
-    height: 0.8rem;
-    width: 20rem;
-    border-radius: inherit;
-    background: linear-gradient(90deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
-    padding-top: 1.5px;
+  height: 0.8rem;
+  width: 20rem;
+  border-radius: inherit;
+  background: linear-gradient(90deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  padding-top: 1.5px;
 }
 
 .used-meter-peak {
-    height: 0.7rem;
-    width: 0.7rem;
-    background-color: hsl(243, 100%, 93%);
-    border-radius: 50%;
-    position: relative;
-    left: 19.25rem;
+  height: 0.7rem;
+  width: 0.7rem;
+  background-color: hsl(240, 45%, 98%);
+  border-radius: 50%;
+  position: relative;
+  left: 19.25rem;
 }
 
 .used-text {
-    position: relative;
-    right: 6.7rem;
+  position: relative;
+  left: 4px;
+  text-align: left;
 }
 
+/* Media Query */
+
+@media (max-width: 375px) {
+  body {
+    background: url("../images/bg-mobile.png");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+  }
+
+  .background {
+    background: none;
+  }
+
+  /* Container Section*/
+  .big-container {
+    display: inline-block;
+    padding-top: 30%;
+  }
+
+  /* Brand Section */
+
+  .brand-container {
+    position: relative;
+    right: 34px;
+  }
+
+  /* Storage Details Section */
+
+  .storage-details-container {
+    margin-top: 20px;
+    position: relative;
+    right: 45px;
+    padding-bottom: 30px;
+  }
+
+  .storage-details-container p:nth-of-type(3),
+  .storage-details-container p:nth-of-type(4),
+  .used-text {
+    position: static;
+  }
+
+  .storage-details-container p:nth-of-type(3) {
+    position: relative;
+    right: 5.5em;
+    font-size: 12px;
+  }
+
+  .storage-details-container p:nth-of-type(4) {
+    position: relative;
+    left: 5.5em;
+    font-size: 12px;
+  }
+
+  .unused-text {
+    padding: 10px 18px;
+    position: absolute;
+    right: 87px;
+    top: 100px;
+  }
+
+  .usage-meter {
+    height: 1rem;
+    width: 13rem;
+  }
+
+  .used-meter-bar {
+    height: 0.8rem;
+    width: 10.5rem;
+  }
+
+  .used-meter-peak {
+    height: 0.7rem;
+    width: 0.7rem;
+    position: relative;
+    left: 9.7rem;
+  }
+
+  .used-text {
+    text-align: center;
+    font-size: 12px;
+  }
+}
 
 /* Attribution Section  */
 
 .attribution {
-    font-size: 11px;
-    position: relative;
- }
-.attribution a { 
-    color: hsl(228, 45%, 44%);
- }
+  font-size: 11px;
+  position: relative;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
